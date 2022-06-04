@@ -1,0 +1,5 @@
+*,*::after,*::before{
+    padding : 0rem;
+    margin : 0rem;
+    box-sizing : border-box;
+}
