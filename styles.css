@@ -42,6 +42,12 @@ body{
     padding : 0rem .75rem;
 }
 
+.list-items li a{
+    display: inline-block;
+    text-decoration : none;
+    color : white;
+}
+
 
 .main-img .files{
     /* background-color: violet; */
@@ -99,9 +105,9 @@ body{
     position: absolute;
     top : 100%;
     width: 100%;
-    height : 100%;
+    height : 120%;
     z-index : -1;
-    transform: scaleX(1.5);
+    transform: scaleX(1.25);
 }
 
 .icons-row1,.icons-row2{
@@ -352,6 +358,10 @@ body{
     border : none;
 }
 
+.footer .ready-box .input-fields input:focus{
+    outline : none;
+}
+
 .footer .ready-box .input-fields input::placeholder{
     font-size : .6rem;
     padding : .5rem 0rem .5rem .5rem;
@@ -450,3 +460,4 @@ body{
 .links .list-items li:hover{
     cursor: pointer;
 }
+
