@@ -16,6 +16,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
     /* background-color: violet; */
 }
 
@@ -94,77 +95,164 @@ body{
     margin-bottom : 1.5rem;
 }
 
-.icon-section{
-    /* background-color: pink; */
-}
-
 .icon-section img{
-    width  : 120%;
-    /* height: 100%; */
     position: absolute;
-    top : 90%;
-    height : 110vh;
-    transform: translateX(-10%);
-    z-index: -1;
+    top : 100%;
+    width: 100%;
+    height : 100%;
+    z-index : -1;
+    transform: scaleX(1.5);
 }
 
-.icon-section-part1,.icon-section-part2{
-    display: flex;
-    flex-direction: row;
+.icons-row1,.icons-row2{
     /* background-color: violet; */
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 2rem;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.icons-set-1{
-    /* background-color : orange; */
-    /* width : 30%; */
-}
-
-.icons-set-2{
-    /* background-color : yellow; */
-    /* width : 30%; */
-}
-
-.icons-set-1, .icons-set-2{
-    display : flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width : 25%;
-    position: relative;
-}
-
-.icon-section-part2{
-    margin-top: 8rem;
-    /* background-color: red; */
-}
-
-.icons-set-1::after{
-    position: absolute;
-    content: url('./images/icon-access-anywhere.svg');
-    left : 50%;
-    top: -75%;
-    transform: translateX(-50%);
-}
-
-.icons-set-2::after{
-    position: absolute;
-    content: url('./images/icon-security.svg');
-    left : 50%;
-    top: -85%;
-    transform: translateX(-50%);
-}
-
-.icons-set-1 p:first-child, .icons-set-2 p:first-child{
-    text-align: center;
     color : white;
-    margin-bottom: .25rem;
+    font-family: 'Open-Sans',sans-serif;
+    margin-top: 8rem;
+}
+
+.icons-row1 > div,.icons-row2 > div{
+    width: 32%;
+}
+
+.icons-row2{
+    margin-top : 10rem;
+}
+
+.file_access p:first-child, .security p:first-child, .collab p:first-child, .store_files p:first-child{
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size : 1.3rem;
     font-weight: 700;
 }
 
-.icons-set-1 p:nth-child(2), .icons-set-2 p:nth-child(2){
-    color : #ccc;
-    font-size: 1rem;
-    font-weight: 400;
+.file_access p:nth-child(2), .security p:nth-child(2),
+.collab p:nth-child(2), .store_files p:nth-child(2){
+    font-size: .8rem;
+    line-height: 1.25rem;
+    color : #c3c3c3;
+}
+
+.file_access,.security,.collab,.store_files{
+    position: relative;
+}
+
+
+.file_access::after,.security::after,.collab::after,.store_files::after{
+    position: absolute;
+    content: url("./images/icon-access-anywhere.svg");
+    text-align: center;
+    left : 50%;
+    transform: translate(-50%,-200%);
+}
+
+.security::after{
+    content: url("./images/icon-security.svg");
+    transform: translate(-50%,-190%);
+}
+
+.collab::after{
+    content: url("./images/icon-collaboration.svg");
+    transform: translate(-50%,-210%);
+}
+
+.store_files::after{
+    content: url("./images/icon-any-file.svg");
+    transform: translate(-50%,-250%);
+}
+
+.productive{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.productive img{
+    display: block;
+    margin-left: 4rem;
+    transform: scale(.85);
+}
+
+.productive-content{
+    color : white;
+    font-family: 'Open-Sans', sans-serif;
+    margin-left : 3rem;
+}
+
+.productive-content p:first-child,.productive-content p:nth-child(2){
+    text-align: left;
+    font-size: 2rem;
+    margin : .4rem 0rem;
+}
+
+.productive-content p:nth-child(3), .productive-content p:nth-child(4){
+    margin : .75rem 0rem;
+    width : 90%;
+    line-height: 1.5rem;
+    color : #c3c3c3;
+}
+
+.know{
+    position: relative;
+    display: inline-block;
+}
+
+.know a{
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: .25rem;
+    color :hsl(176, 68%, 64%);
+    font-size : .8rem;
+}
+
+.know img{
+    position: absolute;
+    top : 50%;
+    right : 0;
+    display: block;
+    transform: translate(130%,-50%);
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.testimonials .box{
+    background-color: hsl(219, 30%, 18%);
+    color : white;
+    font-family: 'Open Sans',sans-serif;
+    margin-top : 5rem;
+    border-radius: 5px;
+}
+
+.testimonials .box p{
+    padding: 1.5rem 1rem;
+    font-size : .95rem;
+    line-height: 1.65rem;
+}
+
+.testimonials .box2{
+    margin-left : 3.5rem;
+    margin-right : 3.5rem;
+}
+
+.testimonials .box1{
+    margin-left : 3.5rem;
+}
+
+.testimonials .box3{
+    margin-right : 3.5rem;
+}
+
+.testimonials .box img{
+    border-radius: 100px;
+    height : 50px;
+    width : 50px;
 }
