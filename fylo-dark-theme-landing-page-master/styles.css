@@ -368,15 +368,6 @@ body{
     font-size : .75rem;
 }
 
-/* .footer .ready-box  */
-
-/* .footer .ready-box .input-field input:focus{
-    border : transparent;
-    box-shadow: none;
-    -webkit-box-shadow : none;
-    outline : 0;
-} */
-
 .footer-margin{
     display: flex;
     align-items: flex-start;
@@ -452,5 +443,10 @@ body{
 
 .footer .socialmedia i{
     margin : 0rem .4rem;
-    font-size : 1.5rem;
+    font-size : 1.75rem;
+    color : white;
+}
+
+.links .list-items li:hover{
+    cursor: pointer;
 }
