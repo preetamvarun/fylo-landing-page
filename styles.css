@@ -169,6 +169,8 @@ body{
     transform: translate(-50%,-250%);
 }
 
+
+
 .productive{
     display: flex;
     flex-direction: row;
@@ -223,6 +225,13 @@ body{
     right : 0;
     display: block;
     transform: translate(130%,-50%);
+}
+
+@media (max-width : 500px){
+    .productive{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .testimonials{
