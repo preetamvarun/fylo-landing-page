@@ -541,9 +541,6 @@ body{
 }
 
 @media(max-width : 500px){
-    .footer .footer-margin{
-        
-    }
     .footer .ready-box{
         width : 90%;
     }
