@@ -44,6 +44,7 @@ body{
 @media (max-width : 500px){
     .nav-bar{
         font-size : .85rem;
+        margin-bottom: 2rem;
     }
     .icon img{
         height : 50px;
@@ -103,6 +104,10 @@ body{
     margin-bottom : 1.5rem;
 }
 
+.files{
+    margin-bottom: 4rem;
+}
+
 @media (max-width : 500px){
     .files-content p:first-child, p:nth-child(2){
         font-size : 1.2rem;
@@ -120,17 +125,19 @@ body{
     }
 }
 
+.icon-section{
+    position: relative;
+}
+
 .icon-section img{
     position: absolute;
-    top : 100%;
-    width: 100%;
-    height : 120%;
     z-index : -1;
-    transform: scaleX(1.25);
+    top : -75%;
+    height : 100vh;
+    left : -25%;
 }
 
 .icons-row1,.icons-row2{
-    /* background-color: violet; */
     display: flex;
     justify-content: space-evenly;
     color : white;
@@ -164,7 +171,6 @@ body{
     position: relative;
 }
 
-
 .file_access::after,.security::after,.collab::after,.store_files::after{
     position: absolute;
     content: url("./images/icon-access-anywhere.svg");
@@ -189,10 +195,24 @@ body{
 }
 
 @media (max-width : 500px){
-    .icon-section{
-        /* background-color: violet; */
-        display: none;
+    .icon-section {position: relative;}
+    .icon-section img {display: none;}
+    .icons-row1,.icons-row2{
+        display: flex;
+        flex-direction: column;
+        margin-top : 0rem;
     }
+    .icons-row1 > div,.icons-row2 > div{
+        width: 85%;
+        margin : 5rem 0rem;
+        position: relative;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .file_access::after,.security::after,.collab::after,.store_files::after {transform: translate(-60%,-230%);}
+    .security::after{transform: translate(-50%,-220%);}
+    .collab::after{transform: translate(-50%,-250%);}
+    .store_files::after{transform: translate(-50%,-260%);}
 }
 
 .productive{
@@ -271,9 +291,6 @@ body{
         line-height: 1.35rem;
         font-size : .95rem;
     }
-
-    
-
 }
 
 .testimonials{
@@ -359,8 +376,13 @@ body{
 
 @media (max-width : 500px){
     .testimonials{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        padding : 4rem 0rem 10rem 0rem;
     }
+    .testimonials .box1{margin : 2rem 1rem 0rem 1rem;}
+    .testimonials .box2{margin : 2rem 1rem;}
+    .testimonials .box3{margin : 0rem 1rem 0rem 1rem;}
 }
 
 .footer{
@@ -368,7 +390,6 @@ body{
     padding-top : 10rem;    
     padding-bottom : 4rem;
     position : relative;
-    display: none;
 }
 
 .footer .ready-box{
@@ -519,3 +540,20 @@ body{
     cursor: pointer;
 }
 
+@media(max-width : 500px){
+    .footer .footer-margin{
+        
+    }
+    .footer .ready-box{
+        width : 90%;
+    }
+    .footer .ready-box .input-fields input{
+        width : 50%;
+        margin : .75rem .45rem .75rem .45rem;
+    }
+    .footer .ready-box .input-fields a{
+        font-size : .6rem;
+        padding : .5rem .65rem;
+        font-size : .7rem;
+    }
+}
