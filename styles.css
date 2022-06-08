@@ -142,6 +142,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: hsl(218, 28%, 13%);
+    padding : 3rem 0rem;
 }
 
 .productive img{
@@ -424,7 +425,11 @@ body{
 
 /* Media queries for small screen mobile devices*/
 @media(max-width : 360px){
-    .nav-bar {font-size : .65rem;}
+    .nav-bar {
+        font-size : .65rem;
+        display: flex;
+        flex-direction: column;
+    }
     .icon img{
         height : 22px;
         width : 50px;
