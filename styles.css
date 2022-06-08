@@ -98,7 +98,6 @@ body{
 
 .icons-row1 > div,.icons-row2 > div {width: 32%;}
 .icons-row2 {margin-top : 10rem; padding-bottom: 3rem;}
-
 .file_access p:first-child, .security p:first-child, .collab p:first-child, .store_files p:first-child{
     text-align: center;
     margin-bottom: .5rem;
