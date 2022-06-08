@@ -464,7 +464,7 @@ body{
 
 
 /* Media queries for medium and large screen mobile devices */
-@media(min-width : 360px) and (max-width : 500px){
+@media(min-width : 360px) and (max-width : 768px){
     .nav-bar{
         font-size : .85rem;
         margin-bottom: 2rem;
@@ -478,7 +478,7 @@ body{
     }
 }
 
-@media(min-width : 360px) and (max-width : 500px){
+@media(min-width : 360px) and (max-width : 768px){
     .files-content p:first-child, p:nth-child(2) {font-size : 1.2rem;}
     .files-content p:nth-child(3){
         margin : .75rem 0rem;
@@ -493,7 +493,7 @@ body{
     }
 }
 
-@media(min-width : 360px) and (max-width : 500px){
+@media(min-width : 360px) and (max-width : 768px){
     .icon-section {position: relative;}
     .icon-section img {display: none;}
     .icon-section {background : url("./images/bg-curvy-mobile.svg") no-repeat top center/cover;}
@@ -515,7 +515,7 @@ body{
     .store_files::after{transform: translate(-50%,-260%);}
 }
 
-@media(max-width : 500px){
+@media(max-width : 768px){
     .productive{
         display: flex;
         flex-direction: column;
@@ -537,7 +537,7 @@ body{
     }
 }
 
-@media(max-width : 500px){
+@media(max-width : 768px){
     .testimonials{
         display: flex;
         flex-direction: column;
@@ -548,7 +548,7 @@ body{
     .testimonials .box3{margin : 0rem 1rem 0rem 1rem;}
 }
 
-@media(max-width : 500px){
+@media(max-width : 768px){
     .footer .ready-box {width : 90%;}
     .footer .ready-box .input-fields input{
         width : 50%;
