@@ -443,6 +443,7 @@ body{
     .files-content p:nth-child(3) {width: 95%;}
     .icon-section {position: relative;}
     .icon-section img {display: none;}
+    .icon-section {background : url("./images/bg-curvy-mobile.svg") no-repeat top center/cover;}
     .icons-row1,.icons-row2{
         display: flex;
         flex-direction: column;
@@ -495,6 +496,7 @@ body{
 @media(min-width : 360px) and (max-width : 500px){
     .icon-section {position: relative;}
     .icon-section img {display: none;}
+    .icon-section {background : url("./images/bg-curvy-mobile.svg") no-repeat top center/cover;}
     .icons-row1,.icons-row2{
         display: flex;
         flex-direction: column;
