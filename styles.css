@@ -431,6 +431,38 @@ body{
     cursor: pointer;
 }
 
+/* Media queries for small screen mobile devices*/
+@media(max-width : 360px){
+    .nav-bar {font-size : .65rem;}
+    .icon img{
+        height : 22px;
+        width : 50px;
+    }
+    .nav-bar .list-items {margin-right: .5rem;}
+    .files-content p:first-child, p:nth-child(2) {font-size : 1rem;}
+    .files-content p:nth-child(3) {width: 95%;}
+    .icon-section {position: relative;}
+    .icon-section img {display: none;}
+    .icons-row1,.icons-row2{
+        display: flex;
+        flex-direction: column;
+        margin-top : 0rem;
+    }
+    .icons-row1 > div,.icons-row2 > div{
+        width: 85%;
+        margin : 5rem 0rem;
+        position: relative;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .file_access::after,.security::after,.collab::after,.store_files::after {transform: translate(-60%,-290%);}
+    .security::after{transform: translate(-50%,-245%);}
+    .collab::after{transform: translate(-50%,-270%);}
+    .store_files::after{transform: translate(-50%,-285%);}
+}
+
+
+/* Media queries for medium and large screen mobile devices */
 @media(min-width : 360px) and (max-width : 500px){
     .nav-bar{
         font-size : .85rem;
@@ -481,7 +513,7 @@ body{
     .store_files::after{transform: translate(-50%,-260%);}
 }
 
-@media(min-width : 360px) and (max-width : 500px){
+@media(max-width : 500px){
     .productive{
         display: flex;
         flex-direction: column;
@@ -503,7 +535,7 @@ body{
     }
 }
 
-@media(min-width : 360px) and (max-width : 500px){
+@media(max-width : 500px){
     .testimonials{
         display: flex;
         flex-direction: column;
@@ -514,7 +546,7 @@ body{
     .testimonials .box3{margin : 0rem 1rem 0rem 1rem;}
 }
 
-@media(min-width : 360px) and (max-width : 500px){
+@media(max-width : 500px){
     .footer .ready-box {width : 90%;}
     .footer .ready-box .input-fields input{
         width : 50%;
@@ -522,7 +554,7 @@ body{
     }
     .footer .ready-box .input-fields a{
         font-size : .6rem;
-        padding : .5rem .65rem;
+        padding : .45rem .65rem;
         font-size : .7rem;
     }
     .footer-margin{
