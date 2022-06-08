@@ -86,7 +86,7 @@ body{
 
 .files {margin-bottom: 4rem;}
 
-.icon-section {background : url("./images/bg-curvy-desktop.svg") no-repeat center center/cover;}
+.icon-section {background : url("./images/bg-curvy-desktop.svg") no-repeat top center/cover;}
 
 .icons-row1,.icons-row2{
     display: flex;
