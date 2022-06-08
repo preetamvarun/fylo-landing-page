@@ -85,15 +85,8 @@ body{
 }
 
 .files {margin-bottom: 4rem;}
-.icon-section {position: relative;}
 
-.icon-section img{
-    position: absolute;
-    z-index : -1;
-    top : -75%;
-    height : 100vh;
-    left : -25%;
-}
+.icon-section {background : url("./images/bg-curvy-desktop.svg") no-repeat center center/cover;}
 
 .icons-row1,.icons-row2{
     display: flex;
@@ -104,7 +97,7 @@ body{
 }
 
 .icons-row1 > div,.icons-row2 > div {width: 32%;}
-.icons-row2 {margin-top : 10rem;}
+.icons-row2 {margin-top : 10rem; padding-bottom: 3rem;}
 
 .file_access p:first-child, .security p:first-child, .collab p:first-child, .store_files p:first-child{
     text-align: center;
@@ -515,7 +508,7 @@ body{
     .store_files::after{transform: translate(-50%,-260%);}
 }
 
-@media(max-width : 768px){
+@media(max-width : 1200px){
     .productive{
         display: flex;
         flex-direction: column;
@@ -528,7 +521,7 @@ body{
     }
 
     .productive-content p:first-child,.productive-content p:nth-child(2){
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 
     .productive-content p:nth-child(3), .productive-content p:nth-child(4){
@@ -537,7 +530,7 @@ body{
     }
 }
 
-@media(max-width : 768px){
+@media(max-width : 1200px){
     .testimonials{
         display: flex;
         flex-direction: column;
@@ -548,7 +541,7 @@ body{
     .testimonials .box3{margin : 0rem 1rem 0rem 1rem;}
 }
 
-@media(max-width : 768px){
+@media(max-width : 1200px){
     .footer .ready-box {width : 90%;}
     .footer .ready-box .input-fields input{
         width : 50%;
@@ -598,4 +591,28 @@ body{
         left : 50%;
         transform: translateX(-50%);
     }
+}
+
+
+/*Media queries for desktop devices*/
+
+@media (min-width : 769px) and (max-width : 1200px){
+    .nav-bar{
+        font-size : 1rem;
+        margin-bottom: 2rem;
+    }
+    .icon img{
+        height : 50px;
+        width : 150px;
+    }
+    .nav-bar .list-items {margin-right: .5rem;}
+    .files-content p:nth-child(3) {width: 65%;}    
+    .files a{margin-bottom : 2.5rem;}
+    .files {margin-bottom: 6rem;}
+    .icons-row1 > div,.icons-row2 > div {width: 40%;}
+    .file_access::after {transform: translate(-50%,-225%);}
+    .security::after {transform: translate(-50%,-215%);}
+    .collab::after {transform: translate(-50%,-240%);}
+    .store_files::after {transform: translate(-50%,-260%);}
+    /* .icon-section img {display: none;} */
 }
