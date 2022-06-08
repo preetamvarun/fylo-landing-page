@@ -43,7 +43,6 @@ body{
     position: relative;
     left : 50%;
     transform: translateX(-50%);
-    display: none;
 }
 
 .files-content{
@@ -433,6 +432,7 @@ body{
     .nav-bar .list-items {margin-right: .5rem;}
     .files-content p:first-child, p:nth-child(2) {font-size : 1rem;}
     .files-content p:nth-child(3) {width: 95%;}
+    .main-img .files img {height : 15rem;}
     .icon-section {position: relative;}
     .icon-section img {display: none;}
     .icon-section {background : url("./images/bg-curvy-mobile.svg") no-repeat top center/cover;}
@@ -472,6 +472,7 @@ body{
 
 @media(min-width : 360px) and (max-width : 768px){
     .files-content p:first-child, p:nth-child(2) {font-size : 1.2rem;}
+    .main-img .files img {height : 15rem;}
     .files-content p:nth-child(3){
         margin : .75rem 0rem;
         width: 90%;
